@@ -11,10 +11,22 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        develop {
+            applicationId "com.my.examples.lection_2.test"
+            versionName "1.0-test"
+        }
+        production {
+            applicationId "com.my.examples.lection_2"
+            versionName "1.0-release"
         }
     }
 }
